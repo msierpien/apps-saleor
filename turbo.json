@@ -15,7 +15,7 @@
     "VERCEL",
     "NEXT_RUNTIME"
   ],
-  "tasks": {
+  "pipeline": {
     "build": {
       "env": ["NEXT_PUBLIC_VERCEL_ENV"],
       "dependsOn": ["^build"],

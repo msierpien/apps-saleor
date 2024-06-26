@@ -16,6 +16,7 @@ RUN pnpm install --global turbo
 
 # Argument APP_NAME umożliwiający określenie aplikacji podczas budowania obrazu
 ARG APP_NAME
+ENV APP_NAME=${APP_NAME}
 
 # Przycięcie zależności tylko dla określonej aplikacji
 RUN turbo prune ${APP_NAME} --docker
